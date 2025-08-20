@@ -9,3 +9,6 @@ contact_links:
   - name: 🧠 StackOverflow #Synack
     url: https://stackoverflow.com/questions/tagged/Synack?sort=newest
     about: Ask/answer usage questions with the Synack tag.
+  - name: 🔐 Security
+    url: https://github.com/scottoffen/Synack/security/policy
+    about: Report security vulnerabilities via the Security Policy.

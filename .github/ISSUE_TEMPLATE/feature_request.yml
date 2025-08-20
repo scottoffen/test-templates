@@ -1,0 +1,77 @@
+name: 💡 Feature request
+description: Propose a change that aligns with Synack’s principles (fast, unopinionated, minimalist).
+title: "[Feature]: <short description>"
+labels: ["enhancement", "needs-triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please **start in Discussions first** to validate the idea with the community.  
+        Create a feature request issue only after you’ve gathered positive feedback.
+
+  - type: input
+    id: discussion-link
+    attributes:
+      label: Link to accepted Discussion
+      description: Paste the URL to the Discussion where consensus was reached.
+      placeholder: https://github.com/scottoffen/Synack/discussions/123
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: Describe the **problem** this solves (not the solution).
+      placeholder: Users need to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Outline how the solution would work at a high level.
+      placeholder: APIs, options, defaults, examples
+      render: csharp
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      placeholder: Why not X? What tradeoffs did you consider?
+
+  - type: checkboxes
+    id: principles
+    attributes:
+      label: Alignment with Synack principles
+      options:
+        - label: Fast (performance impact understood)
+          required: true
+        - label: Unopinionated (doesn’t force specific app architecture)
+          required: true
+        - label: Minimalist (keeps surface area small; sane defaults)
+          required: true
+
+  - type: textarea
+    id: breaking
+    attributes:
+      label: Breaking changes / migration
+      description: Describe any breaking changes and proposed migration path.
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Out of scope
+      description: Call out what this feature explicitly will not do.
+
+  - type: checkboxes
+    id: docs_tests
+    attributes:
+      label: Implementation expectations
+      options:
+        - label: I will include or update documentation.
+        - label: I will include unit tests (xUnit + Shouldly + Moq where applicable).
