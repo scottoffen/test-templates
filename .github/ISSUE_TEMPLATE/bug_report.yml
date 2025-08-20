@@ -1,0 +1,21 @@
+name: 🐞 Bug report
+description: Something reproducible that is broken and should be fixed.
+title: "[Bug]: <short description>"
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks! Usage/how-to questions will be closed—use Discussions or StackOverflow."
+  - type: input
+    id: synack-version
+    attributes:
+      label: Synack version
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Minimal reproducible example
+      render: csharp
+    validations:
+      required: true
