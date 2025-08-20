@@ -1,9 +1,17 @@
 name: 🐛 Bug report
 description: Something reproducible that is broken and should be fixed.
-title: "[Bug]: <short description>"
+title: "[Bug]: "
 labels: ["bug", "needs-triage"]
 assignees: []
 body:
+  - type: input
+    id: bug-title
+    attributes:
+      label: Bug Title
+      description: Provide a concise title for this bug report.
+      placeholder: e.g. "NullReferenceException when binding on IPv6"
+    validations:
+      required: true
   - type: markdown
     attributes:
       value: |
