@@ -1,6 +1,5 @@
 name: 🐛 Bug report
 description: Something reproducible that is broken and should be fixed.
-title: "[Bug]: "
 labels: ["bug", "needs-triage"]
 assignees: []
 body:
