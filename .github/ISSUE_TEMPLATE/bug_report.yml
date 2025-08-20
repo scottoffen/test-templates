@@ -1,4 +1,4 @@
-name: 🐞 Bug report
+name: 🐛 Bug report
 description: Something reproducible that is broken and should be fixed.
 title: "[Bug]: <short description>"
 labels: ["bug", "needs-triage"]
